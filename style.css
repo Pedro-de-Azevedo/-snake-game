@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+
+  /* Background pixelado com várias camadas para floresta */
+  background-color: #264d00; /* verde escuro base */
+  background-image:
+    /* padrão de "grama" pixelada (quadradinhos) */
+    linear-gradient(45deg, #2a7f00 25%, transparent 25%),
+    linear-gradient(-45deg, #2a7f00 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #195200 75%),
+    linear-gradient(-45deg, transparent 75%, #195200 75%);
+  background-size: 40px 40px;
+  background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+}
+
+/* título */
+h1 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  margin: 0 0 20px;
+}
+
+/* botão */
+#startBtn {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #28a745;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: background-color 0.3s, transform 0.1s;
+  margin-bottom: 20px;
+}
+
+#startBtn:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* canvas */
+canvas {
+  border: 6px solid #4CAF50;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 12px;
+  box-shadow: 0 0 20px #000;
+}
